@@ -1,0 +1,13 @@
+# Ignore artifacts:
+node_modules/
+dist/
+build/
+coverage/
+.next/
+.turbo/
+out/
+
+# Ignore lockfiles:
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
