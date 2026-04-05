@@ -6,6 +6,9 @@
   "author": "James Acres <james@bubblyclouds.com>",
   "license": "GPL-3.0",
   "homepage": "https://github.com/jamesacres/human-sudoku-solver#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jamesacres/human-sudoku-solver.git"
