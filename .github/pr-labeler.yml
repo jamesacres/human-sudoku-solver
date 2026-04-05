@@ -1,0 +1,22 @@
+breaking:
+  - head-branch: ["^break/", "^breaking/"]
+feat:
+  - head-branch: ["^feat/", "^feature/"]
+fix:
+  - head-branch: ["^fix/", "^bugfix/", "^hotfix/"]
+perf:
+  - head-branch: ["^perf/"]
+refactor:
+  - head-branch: ["^refactor/"]
+docs:
+  - head-branch: ["^docs/"]
+chore:
+  - head-branch: ["^chore/"]
+build:
+  - head-branch: ["^build/"]
+ci:
+  - head-branch: ["^ci/"]
+style:
+  - head-branch: ["^style/"]
+test:
+  - head-branch: ["^test/"]
