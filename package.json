@@ -1,7 +1,7 @@
 {
   "name": "human-sudoku-solver",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A sudoku solver using human techniques.",
   "author": "James Acres <james@bubblyclouds.com>",
   "license": "GPL-3.0",
