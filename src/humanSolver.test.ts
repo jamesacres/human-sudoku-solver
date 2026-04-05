@@ -674,6 +674,30 @@ describe('humanSolver', () => {
   // ---------------------------------------------------------------------------
 
   describe('findHint — hiddenSingle', () => {
+    it('finds hiddenSingleBox', () => {
+      const grid = parseGrid(
+        '000040927080000000002500340000004060061009700207300800300000100004000002076000000'
+      );
+      const techniques = collectTechniques(grid);
+      expect(techniques.includes('hiddenSingleBox')).toBe(true);
+    });
+
+    it('finds hiddenSingleCol', () => {
+      const grid = parseGrid(
+        '000040927080000000002500340000004060061009700207300800300000100004000002076000000'
+      );
+      const techniques = collectTechniques(grid);
+      expect(techniques.includes('hiddenSingleCol')).toBe(true);
+    });
+
+    it('finds hiddenSingleRow', () => {
+      const grid = parseGrid(
+        '000040927080000000002500340000004060061009700207300800300000100004000002076000000'
+      );
+      const techniques = collectTechniques(grid);
+      expect(techniques.includes('hiddenSingleRow')).toBe(true);
+    });
+
     it('first hint for puzzle-47 is a hiddenSingleBox', () => {
       const grid = parseGrid(PUZZLES[47].init);
       const candidates = buildCandidates(grid);
@@ -893,6 +917,20 @@ describe('humanSolver', () => {
   });
 
   // ---------------------------------------------------------------------------
+  // findHint — Empty Rectangle
+  // ---------------------------------------------------------------------------
+
+  describe('findHint — emptyRectangle', () => {
+    it('finds emptyRectangle', () => {
+      const grid = parseGrid(
+        '000000402500090000080600050002370000054000000000106004600007803020000607001800200'
+      );
+      const techniques = collectTechniques(grid);
+      expect(techniques.includes('emptyRectangle')).toBe(true);
+    });
+  });
+
+  // ---------------------------------------------------------------------------
   // findHint — Skyscraper
   // ---------------------------------------------------------------------------
 
@@ -1020,6 +1058,20 @@ describe('humanSolver', () => {
       const grid = parseGrid(PUZZLES[45].init);
       const techniques = collectTechniques(grid);
       expect(techniques.includes('xyChain')).toBe(true);
+    });
+  });
+
+  // ---------------------------------------------------------------------------
+  // findHint — Grouped AIC
+  // ---------------------------------------------------------------------------
+
+  describe('findHint — groupedAIC', () => {
+    it('finds groupedAIC', () => {
+      const grid = parseGrid(
+        '850690000000040309000007000080000400061005800004100560002050000600000020400302900'
+      );
+      const techniques = collectTechniques(grid);
+      expect(techniques.includes('groupedAIC')).toBe(true);
     });
   });
 
