@@ -1,33 +1,22 @@
 breaking:
-  - head-branch: ['^break/', '^breaking/']
-  - title: ['^break(\(.+\))?!:', '^breaking(\(.+\))?!:', '^feat(\(.+\))?!:', '^\w+(\(.+\))?!:']
+  - head-branch: ["^break/", "^breaking/"]
 feat:
-  - head-branch: ['^feat/', '^feature/']
-  - title: ['^feat(\(.+\))?:']
+  - head-branch: ["^feat/", "^feature/"]
 fix:
-  - head-branch: ['^fix/', '^bugfix/', '^hotfix/']
-  - title: ['^fix(\(.+\))?:']
+  - head-branch: ["^fix/", "^bugfix/", "^hotfix/"]
 perf:
-  - head-branch: ['^perf/']
-  - title: ['^perf(\(.+\))?:']
+  - head-branch: ["^perf/"]
 refactor:
-  - head-branch: ['^refactor/']
-  - title: ['^refactor(\(.+\))?:']
+  - head-branch: ["^refactor/"]
 docs:
-  - head-branch: ['^docs/']
-  - title: ['^docs(\(.+\))?:']
+  - head-branch: ["^docs/"]
 chore:
-  - head-branch: ['^chore/']
-  - title: ['^chore(\(.+\))?:']
+  - head-branch: ["^chore/"]
 build:
-  - head-branch: ['^build/']
-  - title: ['^build(\(.+\))?:']
+  - head-branch: ["^build/"]
 ci:
-  - head-branch: ['^ci/']
-  - title: ['^ci(\(.+\))?:']
+  - head-branch: ["^ci/"]
 style:
-  - head-branch: ['^style/']
-  - title: ['^style(\(.+\))?:']
+  - head-branch: ["^style/"]
 test:
-  - head-branch: ['^test/']
-  - title: ['^test(\(.+\))?:']
+  - head-branch: ["^test/"]
