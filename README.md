@@ -1,5 +1,7 @@
 # human-sudoku-solver
 
+[![npm version](https://img.shields.io/npm/v/human-sudoku-solver)](https://www.npmjs.com/package/human-sudoku-solver)
+
 A TypeScript library that solves Sudoku puzzles using human techniques. Rather than brute-force backtracking, it applies logical solving methods in the same order a human would — making it suitable for hint systems, puzzle analysis, and step-by-step walkthroughs.
 
 ## Installation
