@@ -17,14 +17,17 @@
     "url": "https://github.com/jamesacres/human-sudoku-solver/issues"
   },
   "exports": {
-    ".": "./dist/index.mjs",
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
     "./package.json": "./package.json"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsdown",
+    "build": "tsdown --format esm --format cjs",
     "dev": "tsdown --watch",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
@@ -47,5 +50,8 @@
     "tsdown": "^0.21.7",
     "typescript": "^6.0.2",
     "vitest": "^4.1.2"
-  }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts"
 }
